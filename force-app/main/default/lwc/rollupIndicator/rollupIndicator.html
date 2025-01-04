@@ -1,10 +1,9 @@
-
 <template>
     <lightning-card>
         <div class="rollup-container">
-            <h2>Annual Revenue</h2>
-            <template if:true={rollupValue}>
-                <p>Amount: ${rollupValue}</p>
+            <h2>Rollup Indicator</h2>
+            <template if:true={rollupFieldLabel}>
+                <p><strong>{rollupFieldLabel}:</strong> {rollupFieldValue}</p>
             </template>
             <template if:true={error}>
                 <p class="error">{error}</p>
