@@ -9,10 +9,29 @@
     </targets>
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
+            <property name="targetObject" type="String" label="Target Object" />
+            <property name="rollupFieldApiName" type="String" label="Rollup Field API Name" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
+
+
+<!-- <?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="rollupIndicator">
+    <apiVersion>62.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__HomePage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
             <objects>
                 <object>Account</object> 
             </objects>
                 <property name="targetObject" type="String" label="Target Object" />
-                <property name="rollupFieldApiName" type="String" label="Rollup Field API Name" /></targetConfig>
+                <property name="rollupFieldApiName" type="String" label="Rollup Field API Name" />
+                </targetConfig>
     </targetConfigs>
-</LightningComponentBundle>
+</LightningComponentBundle> -->
