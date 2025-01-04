@@ -1,0 +1,14 @@
+
+<template>
+    <lightning-card>
+        <div class="rollup-container">
+            <h2>Annual Revenue</h2>
+            <template if:true={rollupValue}>
+                <p>Amount: ${rollupValue}</p>
+            </template>
+            <template if:true={error}>
+                <p class="error">{error}</p>
+            </template>
+        </div>
+    </lightning-card>
+</template>
